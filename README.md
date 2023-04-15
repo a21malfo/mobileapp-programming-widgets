@@ -3,13 +3,19 @@
 
 **Skriv din rapport här!**
 
-Först forkades ett projekt från GitHub. Därefter för att öppna upp projektet i Android Studio, gå till File välj New och sedan välj Project from version control. Där finns sitt egna github-konto och hämtade projekt.
+Först forkades ett projekt från GitHub. Därefter för att öppna upp projektet i Android Studio, valdes ´File´ - ´New´ och sedan ´Project from version control´. Där hittar en sitt egna github-konto och där hämtades projektetß.
 
 ## Add a layout of your choice, e.g. `LinearLayout` or `ConstraintLayout`
 
+Valde designläget för en mer bekvämlighet, där är det nämligen bara att dra eller lägga till val av layout till ´Designer - Component Tree´. I detta fall valdes en 
+constraint layout. 
 
+## Add a `ImageView` widgets inside that layout
 
-_Du kan ta bort all text som finns sedan tidigare_.
+I designläget under ´palett´ och ´common´ valdes en ´ImageView´ genom att dra den till fönstret ´Designer - Component Tree´. 
+Här kommer då ett fönster upp kallat ´Pick a Resourse´. I detta fönster finns möjlighet att välja befintlig data av bild eller så går det välja egenvald bild. Här valdes 
+egenvald bild från datorn genom att välja ´+´uppe i vänstra hörnet. Sedan valdes ´Import Drawables´. Då kommer man till sin egna dators bilder. Viktigt här är att välja en ´png-fil´. Valde sedan ´quality type´och ´next´. Då hamnade bilden i katalogen ´res´ och mappen ´drawable´. Valde då bilden där för att importera och då hamnade den i ´Widget.app.main´och där markerar man bilden och trycker OK. 
+
 
 ## Följande grundsyn gäller dugga-svar:
 
