@@ -5,7 +5,7 @@
 
 Först forkades ett projekt från GitHub. Därefter för att öppna upp projektet i Android Studio, gå till File välj New och sedan välj Project from version control. Där finns sitt egna github-konto och hämtade projekt.
 
-# Add a layout of your choice, e.g. `LinearLayout` or `ConstraintLayout`
+## Add a layout of your choice, e.g. `LinearLayout` or `ConstraintLayout`
 
 
 
