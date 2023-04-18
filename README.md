@@ -3,18 +3,70 @@
 
 **Skriv din rapport här!**
 
-Först forkades ett projekt från GitHub. Därefter för att öppna upp projektet i Android Studio, valdes ´File´ - ´New´ och sedan ´Project from version control´. Där hittar en sitt egna github-konto och där hämtades projektetß.
+Först forkades ett projekt från GitHub. Därefter för att öppna upp projektet i Android Studio, 
+valdes ´File´ - ´New´ och sedan ´Project from version control´. Där hittar en sitt egna github-konto
+och där hämtades projektet.
 
 ## Add a layout of your choice, e.g. `LinearLayout` or `ConstraintLayout`
 
-Valde designläget för en mer bekvämlighet, där är det nämligen bara att dra eller lägga till val av layout till ´Designer - Component Tree´. I detta fall valdes en 
-constraint layout. 
+Valde designläget för en mer bekvämlighet, där är det nämligen bara att dra eller lägga till val av 
+layout till ´Designer - Component Tree´. I detta fall valdes en constraint layout. 
 
-## Add a `ImageView` widgets inside that layout
+## Add a `ImageView` widgets inside the layout
 
-I designläget under ´palett´ och ´common´ valdes en ´ImageView´ genom att dra den till fönstret ´Designer - Component Tree´. 
-Här kommer då ett fönster upp kallat ´Pick a Resourse´. I detta fönster finns möjlighet att välja befintlig data av bild eller så går det välja egenvald bild. Här valdes 
-egenvald bild från datorn genom att välja ´+´uppe i vänstra hörnet. Sedan valdes ´Import Drawables´. Då kommer man till sin egna dators bilder. Viktigt här är att välja en ´png-fil´. Valde sedan ´quality type´och ´next´. Då hamnade bilden i katalogen ´res´ och mappen ´drawable´. Valde då bilden där för att importera och då hamnade den i ´Widget.app.main´och där markerar man bilden och trycker OK. 
+I designläget under 'palett' och 'common' valdes en 'ImageView' genom att dra den till fönstret 
+'Designer - Component Tree'. Här kommer då ett fönster upp kallat 'Pick a Resourse'. I detta fönster
+finns möjlighet att välja befintlig data av bilder eller så går det välja egenvald bild. Här valdes 
+egenvald bild från datorn genom att välja '+' uppe i vänstra hörnet. Sedan valdes 'Import Drawables'. 
+Då kommer man till sin datorns egna bilder. Viktigt här är att välja en 'png-fil'. 
+Valde sedan ´quality type´och ´next´. Då hamnade bilden i katalogen ´res´ och mappen ´drawable´. 
+Valde där bilden för att importera. Den hamnar då i 'Widget.app.main' och där markerar man bilden 
+och trycker OK. I designläget ändrades sedan bilden till önskad storlek och plats genom att med 
+markören "dra" i bilden till önskad storlek samt plats.
+
+## Add a `TextView` widgets inside the layout
+
+I designläget under 'palett' och 'common' valdes en 'TextView' genom att dra den till fönstret 
+'Designer - Component Tree'. I activity_main.xml filen skapas då en kod för detta objekt. 
+Se nedan kod (Kod.1). 
+
+Denna kod ändrades i för att lägga till hundens namn, "Charlie" samt ändrades koden så att 
+texten fick storleken 32sp samt centrerades texten. Detta gjordes genom att skriva in ny kod i 
+'activity_main.xml' filen. Därefter ändrades även fonten på namnet "Charlie". Detta gjordes däremot 
+i 'Design' läget i 'Declared Attributes' > 'fontFamily' > 'gorditas_bold'. Båda sättet är möjliga och här 
+valdes det att testa båda sätten. Koden för detta syns i nedan kod (Kod.2) Även här i 'Design' 
+läget ändrades bakgrundsfärgen under 'All Attributes'. 
+
+Kod som lades till: 
+
+```
+<TextView
+android:id="@+id/textView5"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="TextView"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+tools:layout_editor_absoluteY="718dp" />
+```
+Kod som ändrades: 
+
+```
+<TextView
+android:id="@+id/textView5"
+android:layout_width="183dp"
+android:layout_height="43dp"
+android:fontFamily="@font/gorditas_bold"
+android:text="Charlie"
+android:textAlignment="center"
+android:textColor="#844502"
+android:textSize="32sp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.479"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+```
+
 
 
 ## Följande grundsyn gäller dugga-svar:
