@@ -69,6 +69,18 @@ app:layout_constraintStart_toStartOf="parent"
 app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 ```
 
+## Add a `Button` widgets inside the layout
+I designläget under `palett` och `common` valdes en `Button` genom att dra den till fönstret
+`Designer - Component Tree`. Då kom en vit "knapp" med texten text upp på devicen. Denna knappens
+layout ändrades sedan genom tillvalen som finns under `Attributes`. Texten ändrades till `BARK`samt 
+fonten, textstorleken och färgen, även knappens färg ändrades. 
+
+En ljudeffekt av en skällande hund lades till knappen. Detta skapades genom att skapa en ny mapp 
+genom att högerklicka på `res` > `New` > `Android Resource Directory`. Döpte mappen till `raw` där 
+sedan en mp3 fil av hundskall lades till. Sedan var det bara att lägga till kod i 
+´MainActivity.java` filen för att få detta att fungera. 
+
+
 
 
 ## Följande grundsyn gäller dugga-svar:
