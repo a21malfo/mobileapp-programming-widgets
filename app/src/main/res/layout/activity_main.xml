@@ -64,7 +64,7 @@
         android:inputType="textPersonName"
         android:selectAllOnFocus="false"
         android:singleLine="false"
-        android:text="Write Charlies favorites food:"
+        android:text="Write Charlie's favorite food:"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/Button"
