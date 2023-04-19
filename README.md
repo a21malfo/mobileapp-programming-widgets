@@ -40,7 +40,7 @@ i `Design` läget i `Declared Attributes` > `fontFamily` > `gorditas_bold`. Båd
 och här testades båda sätten. Koden för detta syns i nedan kod (Kod.2) Även här i `Design`
 läget ändrades bakgrundsfärgen under `All Attributes` > `background`. 
 
-**Kod som lades till i `activity_main.xml`**
+**Kod som lades till i `activity_main.xml`:**
 
 ```
     <TextView
@@ -161,4 +161,4 @@ se figur 1 nedan. Placeringen till alla widgets är bestämda.
 
 ![](Screenshot_20230419_134338.png)
 
-**Figur 1.**
+*Figur 1.*
