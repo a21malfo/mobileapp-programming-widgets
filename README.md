@@ -159,6 +159,6 @@ se figur 1 nedan. Placeringen till alla widgets är bestämda.
  ```
 
 
-![](Screenshot_20230419_134338.png)
+![](Screenshot_20230419_142007.png)
 
 *Figur 1.*
