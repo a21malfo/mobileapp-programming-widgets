@@ -107,5 +107,5 @@ Placeringen till alla widgets är bestämda.
         app:layout_constraintVertical_bias="0.0" />
  ```
 
-![](Screenshot_20230419_133204.png)
+![](Screenshot_20230419_134338.png)
 **Figur 1.**
