@@ -108,4 +108,5 @@ Placeringen till alla widgets är bestämda.
  ```
 
 ![](Screenshot_20230419_134338.png)
+
 **Figur 1.**
