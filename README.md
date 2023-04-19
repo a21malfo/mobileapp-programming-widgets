@@ -1,17 +1,17 @@
 
 # Rapport
 
-**Skriv din rapport här!**
-
 Först forkades ett projekt från GitHub. Därefter för att öppna upp projektet i Android Studio, 
 valdes `File` > `New` > `Project from version control`. Där finns sitt egna github-konto
 och där hämtades projektet.
+
 
 ## Add a layout of your choice, e.g. `LinearLayout` or `ConstraintLayout`
 
 Valde designläget för en mer bekvämlighet. I `Design` läget är det enkelt att lägga till 
 val av layout till `Designer - Component Tree` genom att bara dra önskade View. I detta fall 
 valdes en `constraint layout`. 
+
 
 ## Add a `ImageView` widgets inside the layout
 
@@ -26,6 +26,7 @@ Valde där bilden för att importera. Den hamnar då i `Widget.app.main` och dä
 och trycker `OK`. I designläget ändrades sedan bilden till önskad storlek och plats genom att med 
 markören "dra" i bilden till önskad storlek samt plats.
 
+
 ## Add a `TextView` widgets inside the layout
 
 I designläget under `Palett` och `Common` valdes en `TextView` genom att dra den till fönstret 
@@ -39,7 +40,7 @@ i `Design` läget i `Declared Attributes` > `fontFamily` > `gorditas_bold`. Båd
 och här testades båda sätten. Koden för detta syns i nedan kod (Kod.2) Även här i `Design`
 läget ändrades bakgrundsfärgen under `All Attributes` > `background`. 
 
-Kod som lades till: 
+**Kod som lades till i `activity_main.xml`**
 
 ```
     <TextView
@@ -51,7 +52,7 @@ Kod som lades till:
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="718dp" />
 ```
-Kod som ändrades: 
+**Kod som ändrades i `activity_main.xml`:**
 
 ```
   <TextView
@@ -69,7 +70,9 @@ Kod som ändrades:
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 ```
 
+
 ## Add a `Button` widgets inside the layout
+
 I designläget under `Palett` och `Common` valdes en `Button` genom att dra den till fönstret
 `Designer - Component Tree`. Då kom en vit "knapp" med texten text upp på devicen. Denna knappens
 layout ändrades sedan genom tillvalen som finns under `Attributes`. Texten ändrades till `BARK`samt 
@@ -80,11 +83,59 @@ genom att högerklicka på `res` > `New` > `Android Resource Directory`. Döpte 
 sedan en mp3 fil av hundskall lades till. Sedan var det bara att lägga till kod i 
 ´MainActivity.java` filen för att få detta att fungera. 
 
+**Kod för knappen i `activity_main.xml`:**
+
+```
+
+    <Button
+        android:id="@+id/Button"
+        style="@android:style/Widget.Button"
+        android:layout_width="116dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        android:background="#C17B31"
+        android:fontFamily="@font/gorditas_bold"
+        android:singleLine="true"
+        android:soundEffectsEnabled="true"
+        android:text="BARK"
+        android:textColor="#F8F5F5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/textView5"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+```
+
+**Kod för ljudfilen i `MainActivity.java`:**
+
+```
+    public class MainActivity extends AppCompatActivity {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
+            final MediaPlayer mp = MediaPlayer.create(this, R.raw.barking);
+            Button Button = (Button) this.findViewById(R.id.Button);
+            Button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    mp.start();
+                }
+            });
+        }
+    }
+```
+
+
 ## Add a `EditText` widgets inside the layout
 I designläget under `Palett` och `Text` valdes en `Plain Text` genom att dra den till fönstret
 `Designer - Component Tree`.
-I designläget ändrades sedan texten "Namn" och en annan font valdes samt typsnittet bold. 
-Placeringen till alla widgets är bestämda.
+I designläget ändrades sedan texten "Namn" och en annan font valdes samt typsnittet bold 
+se figur 1 nedan. Placeringen till alla widgets är bestämda.
+
+**Kod för EditText i `activity_main.xml`**
 
 ```
  <EditText
@@ -106,6 +157,7 @@ Placeringen till alla widgets är bestämda.
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:layout_constraintVertical_bias="0.0" />
  ```
+
 
 ![](Screenshot_20230419_134338.png)
 
